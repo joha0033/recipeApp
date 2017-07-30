@@ -1,0 +1,14 @@
+<h3>Recipe List</h3>
+
+  <form class="form" action="index.html" method="post">
+    <div class="form-group">
+      <label for="message">Message</label>
+      <input ng-model="$ctrl.message" type="text" class="form-control" id="message" value="">
+    </div>
+    <button ng-click="$ctrl.updateMessage()" type="button" class="btn btn-danger"name="button">
+      update message
+    </button>
+
+  </form>
+
+  <h4>Message: {{$ctrl.service.message}}</h4>
