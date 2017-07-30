@@ -1,2 +1,6 @@
 <h3>Recipe Favorites</h3>
-<h4>{{$ctrl.service.message}}</h4>
+<ul class="list-group">
+  <li ng-repeat= "favorite in $ctrl.favorites" class="list-group-item">
+    {{favorite.title}}
+  </li>
+</ul>
